@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jump_Ace's PowerBall Generator</title>
+    </head>
+<body>
+<center>
+<Script Language="JavaScript">
+var Test = new Array(1)
+
+var NoOne = new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59)
+
+var NoTwo = new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59)
+
+var NoThree = new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59)
+
+var NoFour = new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59)
+
+var NoFive = new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59)
+
+var PB = new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35)
+
+var a=0 // Test
+var b=0 // NoOne
+var c=0 // NoTwo
+var d=0 // NoThree
+var e=0 // NoFour
+var f=0 // NoFive
+var g=0 // PB
+
+function PowerBall()
+{
+a=Math.floor(Math.random() * Test.length);
+
+if(Test[a]=1)
+{
+b=Math.floor(Math.random() * NoOne.length);
+c=Math.floor(Math.random() * NoTwo.length);
+d=Math.floor(Math.random() * NoThree.length);
+e=Math.floor(Math.random() * NoFour.length);
+f=Math.floor(Math.random() * NoFive.length);
+g=Math.floor(Math.random() * PB.length);
+document.FORM.NoA.value=NoOne[b]
+document.FORM.NoB.value=NoTwo[c]
+document.FORM.NoC.value=NoThree[d]
+document.FORM.NoD.value=NoFour[e]
+document.FORM.NoE.value=NoFive[f]
+document.FORM.NoPB.value=PB[g]
+}
+
+}
+</SCRIPT>
+<table border="0" cellpadding="0" cellspacing="0" bgcolor="#E4E4E4" bordercolor="#FFFFFF">
+<tr>
+<td height="180" bgcolor="#FFFFFF" TD ALIGN="CENTER"><font face="Palatino Linotype" size="5" color="#2A759D">Jump_Ace's PowerBall Generator</font>
+<br />
+<br />
+<CENTER>
+<FORM NAME="FORM">
+<TABLE>
+<TR>
+<TD VALIGN="TOP" TYPE="TEXT" NAME="Set1" SIZE="75" style="text-align:center; width: 50px;"><font face="Palatino Linotype" size="3" color="#2A759D">Set 1:</font></TD>
+<TD VALIGN="TOP"><font face="Arial" size="2"><INPUT TYPE="TEXT" NAME="NoA" SIZE="75" style="text-align:center; width: 30px;"></font></TD>
+<TD VALIGN="TOP"><font face="Arial" size="2"><INPUT TYPE="TEXT" NAME="NoB" SIZE="75" style="text-align:center; width: 30px;"></font></TD>
+<TD VALIGN="TOP"><font face="Arial" size="2"><INPUT TYPE="TEXT" NAME="NoC" SIZE="75" style="text-align:center; width: 30px;"></font></TD>
+<TD VALIGN="TOP"><font face="Arial" size="2"><INPUT TYPE="TEXT" NAME="NoD" SIZE="75" style="text-align:center; width: 30px;"></font></TD>
+<TD VALIGN="TOP"><font face="Arial" size="2"><INPUT TYPE="TEXT" NAME="NoE" SIZE="75" style="text-align:center; width: 30px;"></font></TD>
+<TD VALIGN="TOP"><font face="Arial" size="2"><INPUT TYPE="TEXT" NAME="NoPB" SIZE="75" style="text-align:center; width: 30px; color: #FF0000;"></font></TD>
+</TR>
+</TABLE>
+<P ALIGN="CENTER"><input type="BUTTON" value="Generate!" onclick="PowerBall()" /></P>
+</FORM>
+</CENTER>
+</td>
+</tr>
+</table>
+<br />
+</center>
+</body>
+</html>
